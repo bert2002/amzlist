@@ -33,8 +33,8 @@ A script for the installation is available. It is tested on ubuntu, but should w
 The best would be to run the script on a empty server or check the install script for what needs to be done.
 
 $ git clone https://github.com/bert2002/amzlist.git<br>
-$ cd amzlist/setup/ubuntu-init/
-$ ./install-ubuntu.sh
+$ cd amzlist/setup/ubuntu-init/<br>
+$ ./install-ubuntu.shy<br>
 
 Configuration
 -------
