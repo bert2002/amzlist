@@ -32,8 +32,8 @@ The product is diveded within a backend and fronted for a higher scalability.
 A script for the installation is available. It is tested on ubuntu, but should work on debian as well.
 The best would be to run the script on a empty server or check the install script for what needs to be done.
 
-$ git clone ....
-$ cd setup/ubuntu-init/install-ubuntu.sh
+$ git clone https://github.com/bert2002/amzlist.git
+$ cd amzlist/setup/ubuntu-init/install-ubuntu.sh
 $ ./install-ubuntu.sh
 
 Configuration
@@ -56,5 +56,7 @@ Known Problems
 Screenshots
 -------
 
-![amzlist1](http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist1.png)
+http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist1.png
+http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist2.png
+http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist3.png
 
