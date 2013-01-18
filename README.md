@@ -2,9 +2,9 @@
 AMZLIST
 =============
 
-AMZLIST is a easy tool to compare different products on all Amazon Stores worldwide. 
-I created the site a couple years ago, but never did any advertisment for it. So it never made it
-and I cant create a nice user interface.
+AMZLIST is a easy tool to compare different products on Amazon Stores worldwide. 
+I created the site a couple years ago, but never did any advertisment for it and lost intrest. So it never made it
+and I am not able to create a beautiful user interface.
 
 
 Features
@@ -16,7 +16,7 @@ Features
 * create links between products on different sites
 * secure captcha for linking products
 * multilingual
-* graph for price history (only backend)
+* rrd graph for price history (only backend)
 
 Demo
 ------
@@ -33,15 +33,17 @@ A script for the installation is available. It is tested on ubuntu, but should w
 The best would be to run the script on a empty server or check the install script for what needs to be done.
 
 $ git clone https://github.com/bert2002/amzlist.git
-$ cd amzlist/setup/ubuntu-init/install-ubuntu.sh
+$ cd amzlist/setup/ubuntu-init/
 $ ./install-ubuntu.sh
 
 Configuration
 -------
 
 The configuration is made within the webinterfaces and backend configuration file.
-Some comments were added. Mostly you need to change the domain and add the Amazon reference IDs if you want to save some money. 
-The rest should be untouched until you know what you are doing :) Please follow the instructions from the installation script.
+Some comments were added. Mostly you need to change the domain and add the Amazon reference IDs. 
+The rest should be untouched until you know what you are doing :) 
+
+Please follow the instructions from the installation script.
 
 Known Problems
 -------
