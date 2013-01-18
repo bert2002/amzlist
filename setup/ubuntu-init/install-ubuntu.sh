@@ -4,6 +4,7 @@
 
 # changelog
 #
+# 2013-01-18 first release
 # 2011-08-29 init
 
 # settings

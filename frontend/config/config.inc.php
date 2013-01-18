@@ -6,7 +6,7 @@
 $IS_MAINTENANCE = "0";
 
 // is domain
-$IS_DOMAIN = "www.yourdomain.com";
+$IS_DOMAIN = "www.yourdomain.org";
 
 // adodb cache
 $ADODB_CACHE_DIR = '/amz/apache/cache';
