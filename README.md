@@ -48,6 +48,7 @@ Known Problems
 
 * Its slow
 * Ugly code
+* Comments missing
 
 Screenshots
 -------
