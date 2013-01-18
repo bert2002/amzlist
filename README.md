@@ -39,13 +39,9 @@ $ ./install-ubuntu.sh
 Configuration
 -------
 
-The simple configuration is made within the webinterfaces and backend configuration file:
-
-/var/www/amzlist/config/config.php
-/global/scripts/amzlist/amazonConfig.pm
-
+The configuration is made within the webinterfaces and backend configuration file.
 Some comments were added. Mostly you need to change the domain and add the Amazon reference IDs if you want to save some money. 
-The rest should be untouched until you know what you are doing :) 
+The rest should be untouched until you know what you are doing :) Please follow the instructions from the installation script.
 
 Known Problems
 -------
@@ -56,7 +52,7 @@ Known Problems
 Screenshots
 -------
 
-http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist1.png
-http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist2.png
-http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist3.png
+* http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist1.png
+* http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist2.png
+* http://github.com/bert2002/amzlist/blob/master/screenshots/amzlist3.png
 
