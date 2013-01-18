@@ -1,0 +1,10 @@
+USE mysql;
+INSERT INTO `db` VALUES ('localhost','amzlist','amzlist','Y','Y','Y','Y','Y','Y','N','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');
+INSERT INTO `db` VALUES ('localhost','amzlist','mysqlbackup','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N');
+INSERT INTO `user` VALUES ('localhost','amzlist','*3D3DD9E64929DJEBDL3EFAD159C86C8ECC5C3C55','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0); 
+INSERT INTO `user` VALUES ('localhost','mysqlbackup','*E83A94929773B01FA8E62C38B9A297836B3D6085','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','','','','',0,0,0,0);
+UPDATE mysql.user SET Password=PASSWORD('may9xagahdae5ooc8Vaequa0') WHERE User='amzlist' AND Host='localhost';
+UPDATE mysql.user SET Password=PASSWORD('may9xagahdae5ooc8Vaequa1') WHERE User='mysqlbackup' AND Host='localhost';
+REVOKE ALL PRIVILEGES ON  `amzlist` . * FROM  'mysqlbackup'@'localhost';
+GRANT SELECT,LOCK TABLES ON  `amzlist` . * TO  'mysqlbackup'@'localhost';
+FLUSH PRIVILEGES;

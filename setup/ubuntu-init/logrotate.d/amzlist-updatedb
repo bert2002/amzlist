@@ -1,0 +1,8 @@
+/amz/perl/log/updatedb.log {  
+  rotate7 
+  daily 
+  compress
+  missingok
+  notifempty
+}
+

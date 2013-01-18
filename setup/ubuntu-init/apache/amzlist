@@ -1,0 +1,61 @@
+<VirtualHost *:80>
+
+	DocumentRoot /amz/apache/html 
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /amz/apache/html/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog /var/log/apache2/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /var/log/apache2/access.log combined
+
+    # rewrite for beautifule url
+ 
+    RewriteEngine on
+
+    # /en/
+    RewriteRule ^/([de|en]+)/   /index.php?language=$1
+
+    # /EUR/de/
+    RewriteRule ^/([EUR|USD|GBP]+)/([de|en]+)/ /index.php?currency=$1&language=$2
+
+    # /news/en/
+    RewriteRule ^/news/([de|en]+)/ /news.php?language=$1
+
+    # /aboutus/en/
+    RewriteRule ^/aboutus/([de|en]+)/ /aboutus.php?language=$1
+
+    # /contact/en/
+    RewriteRule ^/contact/([de|en]+)/ /contact.php?language=$1
+
+    # /legal/en/
+    RewriteRule ^/legal/([de|en]+)/ /legal.php?language=$1
+
+    # /404/en/
+    RewriteRule ^/404/([de|en]+)/ /404.php?language=$1
+
+    # /maintenance/en/
+    RewriteRule ^/maintenance/([de|en]+)/ /maintenance.php?language=$1
+
+    # /unsupported/en/
+    RewriteRule ^/unsupported/([de|en]+)/ /unsupported.php?language=$1
+
+    # /compare/B004C049JC/uk/EUR/de/
+    RewriteRule ^/compare/([a-zA-Z0-9{10}]+)/([de|uk|us|fr|jp|it|cn|ca]+)/([EUR|USD|GBP|CAD|YEN]+)/([de|en]+)/ /index.php?search=$1&country=$2&currency=$3&language=$4
+
+    # /link/B004C049JC/uk/EUR/B004C049JK/de/de/
+    RewriteRule ^/link/([a-zA-Z0-9{10}]+)/([de|uk|us|fr|jp|it|cn|ca]+)/([EUR|USD|GBP|CAD|YEN]+)/([a-zA-Z0-9{10}]+)/([de|uk|us|fr|jp|it|cn|ca]+)/([de|en]+)/ /captcha.php?search=$1&country=$2&currency=$3&childasin=$4&childcountry=$5&language=$6
+
+
+</VirtualHost>

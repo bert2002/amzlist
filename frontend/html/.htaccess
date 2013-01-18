@@ -1,0 +1,4 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /amz/apache/html/.htpasswd 
+require valid-user

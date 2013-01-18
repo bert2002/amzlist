@@ -1,0 +1,237 @@
+
+/* main styling */
+
+
+body {
+	background: #99C4FF;
+}
+
+:link img {
+  border: none;
+  text-decoration: none;
+}
+
+A:link { color: black; text-decoration: none;}
+A:visited {color: black; text-decoration: none;}
+A:active {color: black; text-decoration: none;}
+A:hover {color: black; text-decoration: none;}
+
+.main {
+	height: auto;
+	width: 1024px;
+	border: 0px solid #000000;
+	margin: auto;
+	background: #99C4FF;
+}
+
+.maintop {
+
+	height: 120px;
+	background: #99C4FF;
+	border: 0px solid #000000;
+}
+
+.maincontent {
+        height: auto;
+	min-height:700px;
+        background: #99C4FF;
+	border: 0px solid #000000;
+
+}
+
+.mainbottom {
+	height: 100px;
+        background: #99C4FF;
+	border: 0px solid #000000;
+	margin-top: 30px; 
+}
+
+/* buttons */
+/* http://net.tutsplus.com/tutorials/html-css-techniques/design-a-prettier-web-form-with-css-3/ */
+
+input, select, button {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	background: #FFFFFF;
+	height: 44px; 
+	}
+
+input.search {
+	width: 470px;
+}
+
+input.captcha {
+        width: 200px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+	}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	}
+
+/* frame */
+
+.frame {
+	padding: 15px;
+	background: white; 
+}
+
+
+/* main screen*/
+
+.center {
+	width: 730px; 
+	margin-left: 155px; 
+	border: 0px solid; 
+	padding: 5px; 
+}
+
+
+/* box design */
+
+.box {
+	outline: 1px solid #E5E5E5;
+	border-top: 1px solid #fff;
+	padding: 0px;
+	background: white;
+	height: 75px; 
+	font: normal 14px/100% Verdana, Tahoma, sans-serif;
+}
+
+.divider {
+	border-right: 1px solid #E5E5E5;
+	margin-top: 18px;
+	margin-right: 7px;
+	margin-left: 7px; 
+	background: #f0f0f0;
+	height: 30px;
+	float: left; 
+}
+
+.dividervertical {
+        border-bottom: 1px solid #E5E5E5;
+        margin: 5px;
+        background: #f0f0f0;
+        height: 1px;
+        float: left;
+	width: 430px;
+}
+
+.boxtop {
+	margin-top: 15px; 
+	float: left; 
+	width: 430px;
+	background: white; 
+}
+
+.boxbottom {
+	float: left; 
+	width: 430px;
+	background: white;
+}
+
+.boxbuy {
+	float: right;
+	background: white; 
+	margin-right: 10px; 
+	width: 100px;
+	height: 75px;
+	text-align: center; 
+	line-height: 1.5em;
+	text-decoration: none;
+}
+
+.boxerror {
+	margin-top: 30px;
+	text-align: center; 
+}
+
+.yellow {
+	background: yellow; 
+}
+
+.calculated {
+	min-width: 15px; 
+}
+
+.latest {
+        outline: 1px solid #E5E5E5;
+        border-top: 1px solid #fff;
+        padding: 0px;
+        background: white;
+	height: 325px; 
+        font: normal 14px/100% Verdana, Tahoma, sans-serif;
+}
+
+.boxchoose {   
+        outline: 1px solid #E5E5E5;
+        border-top: 1px solid #fff;
+        padding: 0px;
+        background: white;
+        height: auto;
+        font: normal 14px/100% Verdana, Tahoma, sans-serif;
+}
+
+
+/* text */
+
+.text {
+        font: normal 13px/100% Verdana, Tahoma, sans-serif;
+        background: white;
+        padding-left: 15px; 
+        padding-right: 15px;
+        padding-bottom: 15px;
+        line-height: 1.5em; 
+	text-align: justify; 
+}
+
+.headline {
+	font: normal 25px/100% Verdana, Tahoma, sans-serif;
+	font-weight: bolder; 
+	padding-top: 15px; 
+	padding-left: 15px; 
+	margin-top: 11px;
+	background: white;
+
+}
+
+.text.agreement {
+	padding-top: 15px; 
+	margin-bottom: 5px; 
+}
+
+/* loading screen */
+/* http://www.dynamicdrive.com/forums/showthread.php?t=38639 */
+
+#load{
+	position:absolute;
+	z-index:1;
+	border:1px solid #999;
+	background: white;
+	width: 500px;
+	height:170px;
+	margin-top:-150px;
+	margin-left:-250px;
+	top:50%;
+	left:50%;
+	text-align:center;
+	line-height:100px;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+}
+
