@@ -18,11 +18,6 @@ Features
 * multilingual
 * rrd graph for price history (only backend)
 
-Demo
-------
-
-http://www.amzlist.itbert.de 
-
 Installation
 -------
 
@@ -34,7 +29,7 @@ The best would be to run the script on a empty server or check the install scrip
 
 $ git clone https://github.com/bert2002/amzlist.git<br>
 $ cd amzlist/setup/ubuntu-init/<br>
-$ ./install-ubuntu.shy<br>
+$ ./install-ubuntu.sh<br>
 
 Configuration
 -------
